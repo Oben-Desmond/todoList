@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Project</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body onload="main()">
+
+    <header>
+        <h2>To Do List</h2>
+
+        <section class="inputs">
+            <input  id="task" type="text">
+            <button onclick="addToList()" >ADD</button>
+        </section>
+    </header>
+    <main>
+       <div id="loading" class="loading">
+           loading...
+       </div>
+        <section id="list" class="list">
+           
+        </section>
+        <div id="empty"></div>
+    </main>
+
+
+
+
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+    <script src="./index.js"></script>
+
+
+</body>
+
+</html>
